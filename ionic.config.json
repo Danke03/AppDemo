@@ -1,0 +1,7 @@
+{
+  "name": "03_lamparita_app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
