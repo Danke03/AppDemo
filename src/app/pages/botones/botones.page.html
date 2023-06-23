@@ -1,0 +1,55 @@
+<ion-header no-border>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Botones</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button color="primary">
+        <ion-icon name="heart"></ion-icon>
+      </ion-button>
+
+      <ion-button color="primary">
+        <ion-icon name="star"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+
+  <ion-button expand="full" size="small">
+    SMALL
+  </ion-button>
+  <ion-button expand="full" size="default">
+    DEFAULT
+  </ion-button>
+  <ion-button expand="full" size="large">
+    LARGE
+  </ion-button>
+
+  <ion-button class="top-20" expand="full" routerLink="/alert" color="tertiary">
+    Anchor
+  </ion-button>
+
+
+  <ion-row>
+    <ion-col>
+      <ion-button class="top-20" expand="full" routerLink="/avatar" color="tertiary">
+        Avatar
+      </ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button class="top-20" expand="full" routerLink="/home" color="tertiary">
+        Lampara
+      </ion-button>
+    </ion-col>
+  </ion-row>
+
+  <ion-button class="top-20" fill="Clear">Clear</ion-button>
+  <ion-button class="top-20" fill="Outline">Outline</ion-button>
+  <ion-button class="top-20" fill="solid">MetalGearSolid</ion-button>
+</ion-content>

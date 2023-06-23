@@ -1,0 +1,12 @@
+<app-header titulo="refresher"></app-header>
+
+<ion-content [fullscreen]="true">
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+  <h1  *ngIf="items.length > 0">Pull to refresh</h1>
+  <ion-list *ngFor="let item of items; let i = index">
+    Item {{i+1}}
+  </ion-list>
+</ion-content>
